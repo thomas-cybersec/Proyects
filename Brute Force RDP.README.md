@@ -21,7 +21,7 @@ Reglas de firewall relevantes:
 
 ---
 
-## Escenario 2 — Brute Force RDP desde Kali
+## Brute Force RDP desde Kali
 
 ### Resumen ejecutivo
 
