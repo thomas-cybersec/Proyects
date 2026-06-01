@@ -84,7 +84,7 @@ Hydra encontró la credencial en el intento 6 de 11.
 
 ### Captura 04: Salida exitosa de HydraP
 
-![Hydra encontrando la credencial](04-hydra-bruteforce-exitoso.png)
+![Hydra encontrando la credencial](04-hydra-bruteforce-exitose.png)
 
 ### Análisis en Wazuh
 
