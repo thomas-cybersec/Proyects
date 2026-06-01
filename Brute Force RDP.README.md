@@ -82,8 +82,8 @@ hydra -t 2 -V -f -l soporte -P /home/kali/wordlist-lab.txt rdp://192.168.20.10
 
 Hydra encontró la credencial en el intento 6 de 11.
 
-> 📸 **Captura 04:**
- ###Salida exitosa de Hydra
+### Captura 04: Salida exitosa de HydraP
+
 ![Hydra encontrando la credencial](04-hydra-bruteforce-exitose.png)
 
 ### Análisis en Wazuh
