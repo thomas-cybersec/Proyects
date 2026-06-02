@@ -120,7 +120,7 @@ Esta es la detección clave: Wazuh **correlaciona** múltiples fallos del mismo 
 Observaciones del analista:
 
 1. Wazuh menciona "**possible pass-the-hash attack**" como una de varias hipótesis. **Esta hipótesis se descarta** en este caso: el evento previo de brute force exitoso (rule 60204) indica que el atacante usó credenciales obtenidas por fuerza bruta,
-no un hash robado. En un incidente real, esta es la línea de razonamiento que el analista sigue para clasificar correctamente la técnica usada.
+no un hash robado. En un incidente real, esta es la línea de razonamiento que el analista sigue para clasificar correctamente la técnica usada (SE OBSERVA EN LA ULTIMA IMAGEN). 
 2. La alerta menciona literalmente el nombre de la máquina origen ("kali"), lo que muestra el nivel de enriquecimiento de los eventos Sysmon + Windows logs.
 
 
@@ -148,8 +148,7 @@ Expansión del evento en Wazuh para verificar los campos relevantes:
 
 #### Vista panorámica MITRE
 
-> 📸 **Captura 09:** dashboard MITRE ATT&CK (`09-wazuh-mitre-dashboard.png`)
-
+![dashboard MITRE ATT&CK](09-wazuh-mitre-dashboard.png)
 ### Reconstrucción de la kill chain
 
 | Fase | Técnica MITRE | Evidencia | Nivel Wazuh |
@@ -162,5 +161,5 @@ Expansión del evento en Wazuh para verificar los campos relevantes:
 
 ---
 **Autor:** Thomas  
-**Fecha de ejecución:** 31 de mayo de 2026  
-**Entorno:** Home SOC Lab v1 — pfSense 2.7.2 / Wazuh 4.7.5 / Windows Server 2025 / Kali 2024.x
+**Fecha de ejecución:** 2 de junio de 2026  
+**Entorno:** Home SOC Lab v1 — pfSense / Wazuh / Windows Server / Kali
