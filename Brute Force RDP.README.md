@@ -43,7 +43,7 @@ mapeando todo a MITRE ATT&CK automáticamente. Se identifica además un gap secu
 - NLA deshabilitado deliberadamente para permitir que Hydra autentique (en producción NLA debe estar habilitado).
 
 **2. Creación de usuario señuelo:**
-Creamos un usuario de nombre windows mediante PowerShell de nombre "Soporte" y contraseña "Password123"
+Creamos un usuario local llamado soporte con contraseña débil (Password123) mediante PowerShell, y lo agregamos al grupo Remote Desktop Users.
 
 **3. Verificación de auditoría de logons:**
 ### Validación del usuario en grupo RDP
