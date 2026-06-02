@@ -1,4 +1,4 @@
-# Escenarios de Ataque — Home SOC Lab
+# Escenario de Ataque — Home SOC Lab
 
 Documentación de los escenarios de ataque ejecutados desde la zona ATK (Kali Linux) contra el endpoint en DMZ (Windows Server 2025) y su análisis desde el SIEM (Wazuh) en la zona MGMT.
 
