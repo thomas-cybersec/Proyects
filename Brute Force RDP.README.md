@@ -48,8 +48,6 @@ Creamos un usuario de nombre windows mediante PowerShell de nombre "Soporte" y c
 **3. Verificación de auditoría de logons:
 Validación del usuario en grupo RDP**
 
-### Captura 03: Validación del usuario en grupo RDP
-
 ![Captura 03](03-rdp-config-windows.png)
 
 Confirmado: "Logon" con "Success and Failure" habilitado. Sin esto, los Event ID 4625 no se generarían y el ataque sería invisible.
