@@ -45,9 +45,8 @@ mapeando todo a MITRE ATT&CK automáticamente. Se identifica además un gap secu
 **2. Creación de usuario señuelo:**
 Creamos un usuario de nombre windows mediante PowerShell de nombre "Soporte" y contraseña "Password123"
 
-**3. Verificación de auditoría de logons:
-Validación del usuario en grupo RDP**
-
+**3. Verificación de auditoría de logons:**
+### Validación del usuario en grupo RDP
 ![Captura 03](03-rdp-config-windows.png)
 
 Confirmado: "Logon" con "Success and Failure" habilitado. Sin esto, los Event ID 4625 no se generarían y el ataque sería invisible.
