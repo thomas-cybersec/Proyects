@@ -45,7 +45,8 @@ mapeando todo a MITRE ATT&CK automáticamente. Se identifica además un gap secu
 **2. Creación de usuario señuelo:**
 Creamos un usuario de nombre windows mediante PowerShell de nombre "Soporte" y contraseña "Password123"
 
-**3. Verificación de auditoría de logons:**
+**3. Verificación de auditoría de logons:
+Validación del usuario en grupo RDP**
 
 ### Captura 03: Validación del usuario en grupo RDP
 
