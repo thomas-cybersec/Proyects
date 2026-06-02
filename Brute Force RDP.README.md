@@ -80,7 +80,7 @@ hydra -t 2 -V -f -l soporte -P /home/kali/wordlist-lab.txt rdp://192.168.20.10
 
 Hydra encontró la credencial en el intento 6 de 11.
 
-### Captura 04: Salida exitosa de HydraP
+### Salida exitosa de Hydra
 
 ![Hydra encontrando la credencial](04-hydra-bruteforce-exitose.png)
 
@@ -95,9 +95,9 @@ Cascada de alertas individuales y una alerta agregada por correlación.
 - Cada una corresponde a un Event ID 4625 de Windows.
 - Mapean a T1078 y T1531.
 
-> 📸 **Captura 05:** cascada de logons fallidos
+### cascada de logons fallidos
 > ![Dashboard de Wazuh - Cascada de Failed Logons](05-wazuh-cascada-failed-logons.png)
-> (`05-wazuh-cascada-failed-logons.png`)
+
 
 **Alerta agregada — Rule 60204 (nivel 10):**
 - Descripción: *"Multiple Windows logon failures"*
@@ -106,8 +106,9 @@ Cascada de alertas individuales y una alerta agregada por correlación.
 
 Esta es la detección clave: Wazuh **correlaciona** múltiples fallos del mismo usuario en una ventana temporal corta y genera una alerta de alto nivel. Es la diferencia entre tener logs y tener un SIEM.
 
-> 📸 **Captura 06:** alerta de correlación nivel 10 (`06-wazuh-alerta-correlacion-bruteforce.png`)
+### Alerta de correlación nivel 10 
 ![Wazuh - Alerta de correlación de fuerza bruta](06-wazuh-alerta-correlacion-bruteforce.png)
+
 #### Fase 2: detección del logon exitoso
 
 **Rule 92657 (nivel 6):**
@@ -120,8 +121,11 @@ Observaciones del analista:
 no un hash robado. En un incidente real, esta es la línea de razonamiento que el analista sigue para clasificar correctamente la técnica usada.
 2. La alerta menciona literalmente el nombre de la máquina origen ("kali"), lo que muestra el nivel de enriquecimiento de los eventos Sysmon + Windows logs.
 
-> 📸 **Captura 07:** detección del logon exitoso (`07-wazuh-logon-exitoso-detectado.png`)
+
+### detección del logon exitoso
+
 ![Wazuh - Logon exitoso detectado](07-wazuh-logon-exitoso-detectado.png)
+
 #### Fase 3: análisis del evento crudo
 
 Expansión del evento en Wazuh para verificar los campos relevantes:
@@ -136,7 +140,7 @@ Expansión del evento en Wazuh para verificar los campos relevantes:
 
 `logonType: 10` confirma que el acceso fue por RDP. NTLM como package name es esperable en logons locales sin Active Directory.
 
-> 📸 **Captura 08:** detalle del evento crudo (`08-wazuh-evento-detalle.png`)
+### detalle del evento crudo
 
 ![Wazuh - Detalle del evento en JSON](08-wazuh-evento-detalle.png)
 
