@@ -2,8 +2,6 @@
 
 Laboratorio personal de detección montado en VirtualBox. La idea fue construir un entorno con segmentación de red real, un SIEM aislado y telemetría enriquecida en endpoints Windows, replicando cómo se diseñaría una arquitectura defensiva en una organización chica.
 
-**Estado actual:** infraestructura funcionando, telemetría llegando al SIEM. Los escenarios de ataque desde Kali están en el [repo de escenarios](#) (en construcción).
-
 ---
 
 ## Stack
